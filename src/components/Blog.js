@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import heonLogo from '../assets/images/logo.png';
 
 // const posts = [
 //   {
@@ -108,25 +109,25 @@ const Blog = () => {
   const filteredPosts = selectedCategory === 'all'
     ? posts
     : posts.filter(post => post.categories.map(cat => cat.toLowerCase().replace(' ', '-')).includes(selectedCategory));
-
+      
   return (
     <div className="min-h-screen flex flex-col">
-      <div className="w-full bg-white flex justify-between items-center p-6 mx-2">
-        <Link to="/" className="text-5xl font-bold" style={{ color: '#000000' }}>
-          Heon Lee
+      <nav className="w-full bg-white flex justify-between items-center p-6 mx-2">
+        <Link to="/">
+          <img src={heonLogo} alt="Logo" className="h-12 w-auto" /> {/* Adjust height and width as needed */}
         </Link>
         <div className="flex space-x-6">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-4xl" style={{ color: '#183F7C' }}>
+          <a href="https://www.github.com/heon01px2020" target="_blank" rel="noopener noreferrer" className="text-4xl" style={{ color: '#183F7C' }}>
             <FaGithub />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-4xl" style={{ color: '#183F7C' }}>
+          <a href="https://www.linkedin.com/in/heonlee2002" target="_blank" rel="noopener noreferrer" className="text-4xl" style={{ color: '#183F7C' }}>
             <FaLinkedin />
           </a>
-          <a href="mailto:your-email@example.com" className="text-4xl" style={{ color: '#183F7C' }}>
+          <a href="mailto:heon_lee@brown.edu" className="text-4xl" style={{ color: '#183F7C' }}>
             <FaEnvelope />
           </a>
         </div>
-      </div>
+      </nav>
       <div className="flex-1 bg-gradient-to-br from-custom-white to-custom-blue p-8 w-full flex flex-col items-center">
         <div className="w-full max-w-7xl">
           <h1 className="text-4xl font-bold mb-4">Blog</h1>

@@ -13,7 +13,7 @@ const ZeroKnowledgeProof = () => {
       </h1>
       <div className="prose prose-lg">
         <p>In this blog post, we will explore the concept of zero-knowledge proofs applied to graph 3-coloring using the Go programming language.</p>
-        <p>Here is an example of a LaTeX inline formula: <InlineMath math="a^2 + b^2 = c^2" />.</p>
+        <p>Here is an example of a LaTeX inline formula: <InlineMath math="a^2 + b^2 = c^2\sum_{i=1}^n i^2" />.</p>
         <p>And here is a block formula:</p>
         <BlockMath math="\int_0^\infty x^2 dx" />
       </div>
