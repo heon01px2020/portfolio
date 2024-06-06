@@ -3,7 +3,7 @@ import Layout from './Layout';
 
 // Importing images from assets directory
 import brownLogo from '../assets/images/experience/brown.jpg';
-import brownCSLogo from '../assets/images/experience/brown_cs.jpg';
+// import brownCSLogo from '../assets/images/experience/brown_cs.jpg';
 import rokaLogo from '../assets/images/experience/roka.jpg';
 import motovisLogo from '../assets/images/experience/motovis.jpg';
 
