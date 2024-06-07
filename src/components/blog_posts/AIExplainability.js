@@ -6,8 +6,8 @@ import BlogPostLayout from '../blog_posts/BlogPostLayout';
 import { Helmet } from 'react-helmet';
 import '../blog_posts/LatexDocument.css';
 
-const LindemannWeierstrass = () => {
-    const selectedCategories = ['Math'];
+const AIExplainability = () => {
+    const selectedCategories = ['Artificial Intelligence'];
     return (
         <BlogPostLayout selectedCategories={selectedCategories}>
         <Helmet>
@@ -15,7 +15,9 @@ const LindemannWeierstrass = () => {
             <meta name="generator" content="pandoc" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
             <meta name="author" content="Heon Lee" />
-            <title>Lindemann-Weierstrass Theorem</title>
+            <meta name="author" content="Ricky Zhong" />
+            <meta name="author" content="Thomas Kim" />
+            <title>A Rubric on Explanations for Automated Systems</title>
             <style>{`
             html {
                 line-height: 1.5;
@@ -193,13 +195,13 @@ const LindemannWeierstrass = () => {
         </Helmet>
         <header id="title-block-header">
             <h1 className="title">
-            Lindemann-Weierstrass Theorem
+            A Rubric on Explanations for Automated Systems
             </h1>
-            <p className="author">Heon Lee</p>
+            <p className="author">Heon Lee, Ricky Zhong, Thomas Kim</p>
             <p><b>Full paper to be uploaded here later</b></p>
         </header>
         </BlogPostLayout>
     );
 };
 
-export default LindemannWeierstrass;
+export default AIExplainability;

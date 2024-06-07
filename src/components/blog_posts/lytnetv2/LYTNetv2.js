@@ -1,18 +1,12 @@
-// import React, { useState, useEffect } from 'react';
 import React from 'react';
 import 'katex/dist/katex.min.css';
-import { BlockMath, InlineMath } from 'react-katex';
-import figure1 from './figure1.png';
-import figure2 from './figure2.png';
-import figure3 from './figure3.png';
-import figure4 from './figure4.png';
-import figure5 from './figure5.png';
+// import { BlockMath, InlineMath } from 'react-katex';
 import BlogPostLayout from '../../blog_posts/BlogPostLayout';
 
 import { Helmet } from 'react-helmet';
 import '../LatexDocument.css';
 
-const LYTNetv1 = () => {
+const LYTNetv2 = () => {
     const selectedCategories = ['Artificial Intelligence'];
     return (
         <BlogPostLayout selectedCategories={selectedCategories}>
@@ -23,7 +17,7 @@ const LYTNetv1 = () => {
             <meta name="author" content="Samuel Yu" />
             <meta name="author" content="Heon Lee" />
             <meta name="author" content="John Kim" />
-            <title>LYTNet: A Convolutional Neural Network for Real-Time Pedestrian Traffic Lights and Zebra Crossing Recognition for the Visually Impaired</title>
+            <title>Street Crossing Aid Using Light-weight CNNs for the Visually Impaired</title>
             <style>{`
             html {
                 line-height: 1.5;
@@ -201,38 +195,38 @@ const LYTNetv1 = () => {
         </Helmet>
         <header id="title-block-header">
             <h1 className="title">
-            LYTNet: A Convolutional Neural Network for Real-Time Pedestrian Traffic Lights and Zebra Crossing Recognition for the Visually Impaired
+            Street Crossing Aid Using Light-weight CNNs for the Visually Impaired
             </h1>
             <p className="author">Samuel Yu, Heon Lee, John Kim</p>
-            <p><b>Paper can be found on <a href='https://www.arxiv.org/abs/1907.09706' target='_blank' style={{color: 'blue'}}>arXiv</a></b></p>
+            <p><b>Full paper can be found on <a href='https://arxiv.org/abs/1909.09598' target='_blank' style={{color: 'blue'}}>arXiv</a></b> (to be uploaded here later)</p>
             <div className="abstract">
             <div className="abstract-title">Abstract</div>
             <p>
-                Currently, the visually impaired rely on either a sighted human,
-                guide dog, or white cane to safely navigate. However, the training of
-                guide dogs is extremely expensive, and canes cannot provide essential
-                information regarding the color of traffic lights and direction of
-                crosswalks. In this paper, we propose a deep learning based solution
-                that provides information regarding the traffic light mode and the
-                position of the zebra crossing. Previous solutions that utilize machine
-                learning only provide one piece of information and are mostly binary:
-                only detecting red or green lights. The proposed convolutional neural
-                network, LYTNet, is designed for comprehensiveness, accuracy, and
-                computational efficiency. LYTNet delivers both of the two most important
-                pieces of information for the visually impaired to cross the road. We
-                provide five classes of pedestrian traffic lights rather than the
-                commonly seen three or four, and a direction vector representing the
-                midline of the zebra crossing that is converted from the 2D image plane
-                to real-world positions. We created our own dataset of pedestrian
-                traffic lights containing over 5000 photos taken at hundreds of
-                intersections in Shanghai. The experiments carried out achieve a
-                classification accuracy of 94%, average angle error of 6.35, with a
-                frame rate of 20 frames per second when testing the network on an iPhone
-                7 with additional post-processing steps.
+            In this paper, we address an issue that the visually impaired commonly 
+            face while crossing intersections and propose a solution that takes form 
+            as a mobile application. The application utilizes a deep learning 
+            convolutional neural network model, LytNetV2, to output necessary information 
+            that the visually impaired may lack when without human companions or guide-dogs. 
+            A prototype of the application runs on iOS devices of versions 11 or above. 
+            It is designed for comprehensiveness, concision, accuracy, and computational 
+            efficiency through delivering the two most important pieces of information, 
+            pedestrian traffic light color and direction, required to cross the road in 
+            real-time. Furthermore, it is specifically aimed to support those facing financial 
+            burden as the solution takes the form of a free mobile application. Through 
+            the modification and utilization of key principles in MobileNetV3 such as 
+            depthwise seperable convolutions and squeeze-excite layers, the deep neural 
+            network model achieves a classification accuracy of 96% and average angle error 
+            of 6.15 degrees, while running at a frame rate of 16.34 frames per second. 
+            Additionally, the model is trained as an image classifier, allowing for a 
+            faster and more accurate model. The network is able to outperform other methods 
+            such as object detection and non-deep learning algorithms in both accuracy and 
+            thoroughness. The information is delivered through both auditory signals and 
+            vibrations, and it has been tested on seven visually impaired and has received 
+            above satisfactory responses.
             </p>
             </div>
         </header>
-        <h1 id="introduction">Introduction</h1>
+        {/* <h1 id="introduction">Introduction</h1>
         <p>
             The primary issue that the visually impaired face is not with
             obstacles, which can be detected by their cane, but with information
@@ -397,7 +391,7 @@ const LYTNetv1 = () => {
         and 5-fold cross validation was performed. Images used in the validation
         dataset were directly re-sized from <InlineMath math="4032\times 3024"/> to <InlineMath math="768\times 576"/> without any transformations applied.</p>        
         <div id="tab1" style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-            <table style={{ width: '50%', borderCollapse: 'collapse' }}>  {/* Adjusted the table width to 80% */}
+            <table style={{ width: '50%', borderCollapse: 'collapse' }}>
                 <caption style={{ fontWeight: 'bold', textAlign: 'center' }}>Table 1. Composition of Dataset</caption>
                 <thead>
                 <tr>
@@ -469,7 +463,7 @@ const LYTNetv1 = () => {
         which <InlineMath math='R(W)'/> is L-2 regularization.
         We used the value <InlineMath math='\omega=0.5'/> during training.</p>
         <div id="tab2" style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-            <table style={{ width: '33%', borderCollapse: 'collapse' }}> {/* Adjusted the table width to 80% */}
+            <table style={{ width: '33%', borderCollapse: 'collapse' }}>
             <caption style={{ fontWeight: 'bold', textAlign: 'center' }}>Table 2. Structure of Our Network</caption>
             <tbody>
                 <tr className="odd">
@@ -655,8 +649,6 @@ const LYTNetv1 = () => {
         x-axis.</figcaption>
         </figure>
 
-
-        {/* STOP HERE */}
         <h2 id="mobile-application">Mobile Application</h2>
         <p>As a proof of concept, an application was created using Swift. LYTNet
         is deployed in the application. Additional post-processing steps are
@@ -1078,9 +1070,9 @@ const LYTNetv1 = () => {
             <li>Lausser, L., Schwenker, F., Palm, G.: Detecting zebra crossings utilizing adaboost. In: ESANN. pp. 535-540 (2008)</li>
             <li>David Banich, J.: Zebra Crosswalk Detection Assisted By Neural Networks. Master’s thesis, California Polytechnic State University (2016)</li>
             </ol>
-        </div>
+        </div> */}
         </BlogPostLayout>
     );
 };
 
-export default LYTNetv1;
+export default LYTNetv2;

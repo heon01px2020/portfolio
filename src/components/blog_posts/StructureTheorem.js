@@ -6,7 +6,7 @@ import BlogPostLayout from '../blog_posts/BlogPostLayout';
 import { Helmet } from 'react-helmet';
 import '../blog_posts/LatexDocument.css';
 
-const LindemannWeierstrass = () => {
+const StructureTheorem = () => {
     const selectedCategories = ['Math'];
     return (
         <BlogPostLayout selectedCategories={selectedCategories}>
@@ -14,8 +14,11 @@ const LindemannWeierstrass = () => {
             <meta charSet="utf-8" />
             <meta name="generator" content="pandoc" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+            <meta name="author" content="Chris Jeong" />
             <meta name="author" content="Heon Lee" />
-            <title>Lindemann-Weierstrass Theorem</title>
+            <meta name="author" content="Kabir Narayanan" />
+            <meta name="author" content="Kai Zuang" />
+            <title>A Rubric on Explanations for Automated Systems</title>
             <style>{`
             html {
                 line-height: 1.5;
@@ -193,13 +196,13 @@ const LindemannWeierstrass = () => {
         </Helmet>
         <header id="title-block-header">
             <h1 className="title">
-            Lindemann-Weierstrass Theorem
+            Understanding the Structure of Abelian Groups (with Modules!)
             </h1>
-            <p className="author">Heon Lee</p>
+            <p className="author">Chris Jeong, Heon Lee, Kabir Narayanan, Kai Zuang</p>
             <p><b>Full paper to be uploaded here later</b></p>
         </header>
         </BlogPostLayout>
     );
 };
 
-export default LindemannWeierstrass;
+export default StructureTheorem;

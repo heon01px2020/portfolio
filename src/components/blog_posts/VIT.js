@@ -6,8 +6,8 @@ import BlogPostLayout from '../blog_posts/BlogPostLayout';
 import { Helmet } from 'react-helmet';
 import '../blog_posts/LatexDocument.css';
 
-const LindemannWeierstrass = () => {
-    const selectedCategories = ['Math'];
+const VIT = () => {
+    const selectedCategories = ['Artificial Intelligence'];
     return (
         <BlogPostLayout selectedCategories={selectedCategories}>
         <Helmet>
@@ -15,7 +15,9 @@ const LindemannWeierstrass = () => {
             <meta name="generator" content="pandoc" />
             <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
             <meta name="author" content="Heon Lee" />
-            <title>Lindemann-Weierstrass Theorem</title>
+            <meta name="author" content="Ilana Nguyen" />
+            <meta name="author" content="Kelvin Jiang" />
+            <title>Attention Really is All You Need 👀</title>
             <style>{`
             html {
                 line-height: 1.5;
@@ -193,13 +195,13 @@ const LindemannWeierstrass = () => {
         </Helmet>
         <header id="title-block-header">
             <h1 className="title">
-            Lindemann-Weierstrass Theorem
+            Attention Really is All You Need 👀
             </h1>
-            <p className="author">Heon Lee</p>
+            <p className="author">Heon Lee, Ilana Nguyen, Kelvin Jiang</p>
             <p><b>Full paper to be uploaded here later</b></p>
         </header>
         </BlogPostLayout>
     );
 };
 
-export default LindemannWeierstrass;
+export default VIT;

@@ -8,6 +8,10 @@ import Blog from './components/Blog';
 import AboutMe from './components/AboutMe';
 import LindemannWeierstrass from './components/blog_posts/LindemannWeierstrass';
 import LYTNetv1 from './components/blog_posts/lytnetv1/LYTNetv1';
+import LYTNetv2 from './components/blog_posts/lytnetv2/LYTNetv2';
+import StructureTheorem from './components/blog_posts/StructureTheorem';
+import VIT from './components/blog_posts/VIT';
+import AIExplainability from './components/blog_posts/AIExplainability';
 
 function App() {
   return (
@@ -20,6 +24,10 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/lindemann-weierstrass" element={<LindemannWeierstrass />} />
         <Route path="/blog/LYTNetv1" element={<LYTNetv1 />} />
+        <Route path="/blog/LYTNetv2" element={<LYTNetv2 />} />
+        <Route path="/blog/structure-theorem" element={<StructureTheorem />} />
+        <Route path="/blog/vit-attention" element={<VIT />} />
+        <Route path="/blog/ai-explainability" element={<AIExplainability />} />
       </Routes>
     </Router>
   );
