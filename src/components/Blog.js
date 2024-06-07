@@ -5,11 +5,25 @@ import heonLogo from '../assets/images/logo.png';
 
 const posts = [
   {
-    date: 'April 5, 2024',
+    date: 'April 25, 2024',
     title: 'Understanding the Structure of Abelian Groups (with Modules!)',
-    description: 'A Proof of the Structure Theorem (to be updated)',
+    description: 'A proof of the Structure Theorem (to be updated)',
     categories: ['Math'],
     link: 'structure-theorem'
+  },
+  {
+    date: 'April 20, 2024',
+    title: 'Sameness of Consciousness as Necessary and Sufficient Conditions for Personal Identity',
+    description: 'An expository essay on Locke theory of sameness of consciousness',
+    categories: ['Miscellaneous'],
+    link: 'locke-consciousness'
+  },
+  {
+    date: 'March 8, 2024',
+    title: 'Clarity and Distinctness as Conditions for Truth',
+    description: "An expository essay on Descartes' conditions for truth",
+    categories: ['Miscellaneous'],
+    link: 'descartes-truth'
   },
   {
     date: 'May 12, 2023',
@@ -52,8 +66,8 @@ const categories = [
   { name: 'All', id: 'all', color: '#f56565' },
   { name: 'Artificial Intelligence', id: 'artificial-intelligence', color: '#ecc94b' },
   { name: 'Math', id: 'math', color: '#9f7aea' },
-  // { name: 'Theoretical CS', id: 'theoretical-cs', color: '#4299e1' },
-  // { name: 'Miscellaneous', id: 'miscellaneous', color: '#48bb78' }
+  { name: 'Theoretical CS', id: 'theoretical-cs', color: '#4299e1' },
+  { name: 'Miscellaneous', id: 'miscellaneous', color: '#48bb78' }
 ];
 
 const Blog = () => {

@@ -12,6 +12,8 @@ import LYTNetv2 from './components/blog_posts/lytnetv2/LYTNetv2';
 import StructureTheorem from './components/blog_posts/StructureTheorem';
 import VIT from './components/blog_posts/VIT';
 import AIExplainability from './components/blog_posts/AIExplainability';
+import LockeConsciousness from './components/blog_posts/LockeConsciousness';
+import DescartesTruth from './components/blog_posts/DescartesTruth';
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
         <Route path="/blog/structure-theorem" element={<StructureTheorem />} />
         <Route path="/blog/vit-attention" element={<VIT />} />
         <Route path="/blog/ai-explainability" element={<AIExplainability />} />
+        <Route path="/blog/locke-consciousness" element={<LockeConsciousness />} />
+        <Route path="/blog/descartes-truth" element={<DescartesTruth />} />
       </Routes>
     </Router>
   );

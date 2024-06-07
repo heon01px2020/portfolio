@@ -7,8 +7,8 @@ const categories = [
   { name: 'All', id: 'all', link: '/blog?category=all', color: '#f56565' },
   { name: 'Artificial Intelligence', id: 'artificial-intelligence', link: '/blog?category=artificial-intelligence', color: '#ecc94b' },
   { name: 'Math', id: 'math', link: '/blog?category=math', color: '#9f7aea' },
-  // { name: 'Theoretical CS', id: 'theoretical-cs', link: '/blog?category=theoretical-cs', color: '#4299e1' },
-  // { name: 'Miscellaneous', id: 'miscellaneous', link: '/blog?category=miscellaneous', color: '#48bb78' }
+  { name: 'Theoretical CS', id: 'theoretical-cs', link: '/blog?category=theoretical-cs', color: '#4299e1' },
+  { name: 'Miscellaneous', id: 'miscellaneous', link: '/blog?category=miscellaneous', color: '#48bb78' }
 ];
 
 
