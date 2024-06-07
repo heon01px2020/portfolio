@@ -51,7 +51,7 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <nav className="w-full bg-white flex justify-between items-center p-6 mx-2">
+      <nav className="w-full bg-white flex justify-between items-center p-4 mx-2 h-16">
         <Link to="/">
           <img src={heonLogo} alt="Logo" className="h-12 w-auto" /> {/* Adjust height and width as needed */}
         </Link>
