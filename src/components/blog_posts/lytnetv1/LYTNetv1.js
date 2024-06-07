@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+// import React, { useState, useEffect } from 'react';
+import React from 'react';
 import 'katex/dist/katex.min.css';
 // import { BlockMath, InlineMath } from 'react-katex';
 // import figure1 from './figure1.png';
