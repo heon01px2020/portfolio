@@ -359,8 +359,7 @@ const LYTNetv1 = () => {
         <p>Our method is performed on our labeled test-set. The training, test,
         and validation sets do not overlap.</p>
         <figure>
-        <img src={figure1} id="figure1"
-        alt="Sample images taken in different weather and lighting conditions. Other pedestrian traffic lights or vehicle/bicycle traffic lights can be seen in the images. The two endpoints of the zebra crossing are labelled as seen on the images." />
+        <img src={figure1} id="figure1" />
         <figcaption aria-hidden="true"><b>Fig. 1.</b> Sample images taken in different weather
         and lighting conditions. Other pedestrian traffic lights or
         vehicle/bicycle traffic lights can be seen in the images. The two
@@ -644,8 +643,7 @@ const LYTNetv1 = () => {
         maps each point on the image <InlineMath math="(x,y,1)" /> to its corresponding point in the real-world. Assuming a fixed height, and a fixed angle around the transverse and longitudinal axes, the matrix will perfectly map each point on the image to the correct birds-eye-view point. Though this is not the case due to varying heights and angles around the transverse axis, the matrix provides the rough position of zebra crossing in the real world, which is sufficient for the purposes of guiding the visually impaired to a correct orientation.
         </p>
         <figure>
-        <img src={figure2} id="figure2"
-        alt="The image on the left is the base image that was taken perpendicular to the zebra crossing and positioned in the center of the crossing, at a camera height of 1.4 m. Using our matrix, each point in the base image is mapped to a new point, creating the birds-eye image on the right. We can see that the zebra crossing is bounded by a rectangle with a midline centered and perpendicular to the x-axis." />
+        <img src={figure2} id="figure2" />
         <figcaption aria-hidden="true"><b>Fig. 2.</b> The image on the left is the base image
         that was taken perpendicular to the zebra crossing and positioned in the
         center of the crossing, at a camera height of 1.4 m. Using our matrix,
@@ -691,14 +689,12 @@ const LYTNetv1 = () => {
         the zebra crossing. Refer to Figure 3 for a flow chart of the demo
         application and Figure 4 for a screenshot of our demo application.</p>
         <figure>
-        <img src={figure3} id="figure3"
-        alt="Our application continuously iterates through this flow chart at 20fps." />
+        <img src={figure3} id="figure3" />
         <figcaption aria-hidden="true"><b>Fig. 3.</b> Our application continuously iterates
         through this flow chart at 20fps.</figcaption>
         </figure>
         <figure>
-        <img src={figure4} id="figure4"
-        alt="Sample screenshots from our demo application. In order from top to bottom is the: position instruction, orientation instruction, 5-frame average class, delay, frame rate, and current detected class. The blue line is the direction vector for the specific frame , and the red line is the five-frame average direction vector." />
+        <img src={figure4} id="figure4" />
         <figcaption aria-hidden="true"><b>Fig. 4.</b> Sample screenshots from our demo
         application. In order from top to bottom is the: position instruction,
         orientation instruction, 5-frame average class, delay, frame rate, and
@@ -915,8 +911,7 @@ const LYTNetv1 = () => {
         weather. (B), (C), and (D) all show the network predicting coordinates
         close to the ground truth.</p>
         <figure>
-        <img src={figure5} id="figure5"
-        alt="Example correct outputs from our neural network. The class is labelled on top of each image. Blue dots are ground truth coordinates and red dots are predicted coordinates." />
+        <img src={figure5} id="figure5" />
         <figcaption aria-hidden="true"><b>Fig. 5.</b> Example correct outputs from our neural
         network. The class is labelled on top of each image. Blue dots are
         ground truth coordinates and red dots are predicted
