@@ -14,14 +14,14 @@ const posts = [
   {
     date: '',
     title: 'LYTNet: A Convolutional Neural Network for Real-Time Pedestrian Traffic Lights and Zebra Crossing Recognition for the Visually Impaired',
-    description: 'Exploring isomorphism classes of S-decorated simple graphs.',
+    description: 'LYTNet.',
     categories: ['Artificial Intelligence'],
     link: 'LYTNetv1'
   },
   {
     date: '',
     title: 'Street Crossing Aid Using Light-weight CNNs for the Visually Impaired',
-    description: 'An overview of my self-hosting setup and the tools I use.',
+    description: 'LYTNet.',
     categories: ['Artificial Intelligence'],
     link: 'LYTNetv2'
   }
