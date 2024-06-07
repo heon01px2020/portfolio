@@ -198,7 +198,7 @@ const LYTNetv2 = () => {
             Street Crossing Aid Using Light-weight CNNs for the Visually Impaired
             </h1>
             <p className="author">Samuel Yu, Heon Lee, John Kim</p>
-            <p><b>Full paper can be found on <a href='https://arxiv.org/abs/1909.09598' target='_blank' style={{color: 'blue'}}>arXiv</a></b> (to be uploaded here later)</p>
+            <p><b>Full paper can be found on <a href='https://arxiv.org/abs/1909.09598' target='_blank' rel="noopener noreferrer" style={{color: 'blue'}}>arXiv</a></b> (to be uploaded here later)</p>
             <div className="abstract">
             <div className="abstract-title">Abstract</div>
             <p>

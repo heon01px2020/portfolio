@@ -204,7 +204,7 @@ const LYTNetv1 = () => {
             LYTNet: A Convolutional Neural Network for Real-Time Pedestrian Traffic Lights and Zebra Crossing Recognition for the Visually Impaired
             </h1>
             <p className="author">Samuel Yu, Heon Lee, John Kim</p>
-            <p><b>Paper can be found on <a href='https://www.arxiv.org/abs/1907.09706' target='_blank' style={{color: 'blue'}}>arXiv</a></b></p>
+            <p><b>Paper can be found on <a href='https://www.arxiv.org/abs/1907.09706' target='_blank' rel="noopener noreferrer" style={{color: 'blue'}}>arXiv</a></b></p>
             <div className="abstract">
             <div className="abstract-title">Abstract</div>
             <p>
