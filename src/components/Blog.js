@@ -3,97 +3,36 @@ import { Link, useLocation } from 'react-router-dom';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import heonLogo from '../assets/images/logo.png';
 
-// const posts = [
-//   {
-//     date: 'May 15 2024',
-//     title: 'Proving Graph 3–Coloring with Go and Zero–Knowledge Proofs',
-//     description: 'A deep dive into proving graph 3-coloring using Go and zero-knowledge proofs.',
-//     categories: ['Math', 'Networks'],
-//     link: '/blog/zero-knowledge-proof-for-graph-3-coloring-in-go',
-//   },
-//   // Other posts...
-// ];
-
 const posts = [
   {
-    date: 'May 15 2024',
-    title: 'Proving Graph 3–Coloring with Go and Zero–Knowledge Proofs',
-    description: 'A deep dive into proving graph 3-coloring using Go and zero-knowledge proofs.',
-    categories: ['Math', 'Networks'],
-    link: '/blog/zero-knowledge-proof-for-graph-3-coloring-in-go'
+    date: '',
+    title: 'Lindemann-Weierstrass Theorem',
+    description: 'A Proof of Transcendence of e and pi.',
+    categories: ['Math'],
+    link: 'lindemann-weierstrass'
   },
   {
-    date: 'Mar 20 2024',
-    title: 'Isomorphism Classes of S–Decorated Simple Graphs',
+    date: '',
+    title: 'LYTNet: A Convolutional Neural Network for Real-Time Pedestrian Traffic Lights and Zebra Crossing Recognition for the Visually Impaired',
     description: 'Exploring isomorphism classes of S-decorated simple graphs.',
-    categories: ['Math'],
-    link: '/blog/isomorphism-classes-of-s-decorated-simple-graphs'
+    categories: ['Artificial Intelligence'],
+    link: 'LYTNetv1'
   },
   {
-    date: 'Aug 13 2023',
-    title: 'A Glimpse into my Self–Hosting Setup',
+    date: '',
+    title: 'Street Crossing Aid Using Light-weight CNNs for the Visually Impaired',
     description: 'An overview of my self-hosting setup and the tools I use.',
-    categories: ['Networks'],
-    link: '/blog/self-hosting-setup'
-  },
-  {
-    date: 'May 10 2023',
-    title: 'Associating Finite Groups with Cayley Color Graphs',
-    description: 'Understanding finite groups through Cayley color graphs.',
-    categories: ['Math'],
-    link: '/blog/finite-groups-and-cayley-color-graphs'
-  },
-  {
-    date: 'Dec 26 2022',
-    title: 'The Representability of Graphic Matroids as Vector Matroids',
-    description: 'Exploring the representability of graphic matroids as vector matroids.',
-    categories: ['Math'],
-    link: '/blog/representability-of-graphic-matroids'
-  },
-  {
-    date: 'Jun 03 2022',
-    title: 'How to Tunnel Traffic With WireGuard Forwarding',
-    description: 'A tutorial on tunneling traffic with WireGuard forwarding.',
-    categories: ['Networks'],
-    link: '/blog/wireguard-forwarding'
-  },
-  {
-    date: 'May 24 2022',
-    title: 'Self–Host Your Color Schemes',
-    description: 'A tutorial on self-hosting your color schemes.',
-    categories: ['Linux', 'Networks', 'Rust'],
-    link: '/blog/self-host-color-schemes'
-  },
-  {
-    date: 'Mar 16 2022',
-    title: 'Bevy Jam #1: Beeline',
-    description: 'A report on Bevy Jam #1: Beeline.',
-    categories: ['Game Dev', 'Rust'],
-    link: '/blog/bevy-jam-1-beeline'
-  },
-  {
-    date: 'Feb 04 2022',
-    title: 'Planes: altitude, roll, and collisions',
-    description: 'A discussion on planes: altitude, roll, and collisions.',
-    categories: ['Game Dev', 'Rust'],
-    link: '/blog/planes-altitude-roll-collisions'
-  },
-  {
-    date: 'Dec 19 2021',
-    title: 'Spatial Hash Structures for Fast XY Search',
-    description: 'An exploration of spatial hash structures for fast XY search.',
-    categories: ['Networks'],
-    link: '/blog/spatial-hash-structures-xy-search'
+    categories: ['Artificial Intelligence'],
+    link: 'LYTNetv2'
   }
 ];
 
 const categories = [
   { name: 'All', id: 'all', color: '#f56565' },
-  { name: 'Game Dev', id: 'game-dev', color: '#ecc94b' },
-  { name: 'Linux', id: 'linux', color: '#4299e1' },
+  { name: 'Artificial Intelligence', id: 'artificial-intelligence', color: '#ecc94b' },
   { name: 'Math', id: 'math', color: '#9f7aea' },
-  { name: 'Networks', id: 'networks', color: '#48bb78' },
-  { name: 'Rust', id: 'rust', color: '#ed8936' },
+  { name: 'Theoretical CS', id: 'theoretical-cs', color: '#4299e1' },
+  { name: 'Miscellaneous', id: 'miscellaneous', color: '#48bb78' }
 ];
 
 const Blog = () => {
@@ -109,7 +48,7 @@ const Blog = () => {
   const filteredPosts = selectedCategory === 'all'
     ? posts
     : posts.filter(post => post.categories.map(cat => cat.toLowerCase().replace(' ', '-')).includes(selectedCategory));
-      
+
   return (
     <div className="min-h-screen flex flex-col">
       <nav className="w-full bg-white flex justify-between items-center p-6 mx-2">
@@ -154,7 +93,7 @@ const Blog = () => {
               <p className="mb-2">{post.description}</p>
               <div className="flex space-x-2">
                 {post.categories.map(category => (
-                  <span key={category} className="px-2 py-1 rounded-full text-white" style={{ backgroundColor: categories.find(cat => cat.name === category).color }}>
+                  <span key={category} className="px-2 py-1 rounded-full text-white" style={{ backgroundColor: categories.find(cat => cat.name.toLowerCase().replace(' ', '-') === category.toLowerCase().replace(' ', '-')).color }}>
                     {category}
                   </span>
                 ))}

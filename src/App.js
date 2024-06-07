@@ -6,7 +6,8 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Blog from './components/Blog';
 import AboutMe from './components/AboutMe';
-import ZeroKnowledgeProof from './components/blog_posts/ZeroKnowledgeProof';
+import LindemannWeierstrass from './components/blog_posts/LindemannWeierstrass';
+import LYTNetv1 from './components/blog_posts/lytnetv1/LYTNetv1';
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/zero-knowledge-proof-for-graph-3-coloring-in-go" element={<ZeroKnowledgeProof />} />
+        <Route path="/blog/lindemann-weierstrass" element={<LindemannWeierstrass />} />
+        <Route path="/blog/LYTNetv1" element={<LYTNetv1 />} />
       </Routes>
     </Router>
   );

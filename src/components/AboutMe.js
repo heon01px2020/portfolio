@@ -25,9 +25,9 @@ const AboutMe = () => {
         <p className="text-xl mb-4">
           I'm also socially conscious about the impact of technology, especially AI, in current times. As a TA for the course Fairness in Automated Decision Making, I've contributed to developing assignments that adopt algorithmic and mathematical approaches to assess and mitigate biases. One such assignment involves implementing prejudice remover—a regularization approach applicable to any prediction algorithm with probabilistic discriminative models—from the paper by Toshihiro Kamishima et al. I've also helped design a new final project where students audit an AI system modeling a real-world situation.
         </p>
-        <p className="text-xl mb-4">
+        {/* <p className="text-xl mb-4">
           Some of my personal projects never make it to the public eye, but there is a certain beauty in that too. However, those that I'm keen to share can be found on my <a href="https://github.com/heon01px2020" style={{ color: '#183F7C', fontWeight: 'bold' }}>GitHub</a>.
-        </p>
+        </p> */}
         <p className="text-xl">
           Feel free to connect via email (heon_lee at brown.edu).
         </p>

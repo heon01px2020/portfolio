@@ -1,15 +1,15 @@
 import React from 'react';
 import { InlineMath, BlockMath } from 'react-katex';
-import BlogPostLayout from '../blog_posts/BlogPostLayout';
+import BlogPostLayout from './BlogPostLayout';
 import 'katex/dist/katex.min.css';
 
-const ZeroKnowledgeProof = () => {
+const LindemannWeierstrass = () => {
   const selectedCategories = ['Math', 'Networks'];
 
   return (
     <BlogPostLayout selectedCategories={selectedCategories}>
       <h1 className="text-4xl font-bold mb-4" style={{ color: '#183F7C' }}>
-        Proving Graph 3–Coloring with Go and Zero–Knowledge Proofs
+        Lindemann Weierstrass Theorem
       </h1>
       <div className="prose prose-lg">
         <p>In this blog post, we will explore the concept of zero-knowledge proofs applied to graph 3-coloring using the Go programming language.</p>
@@ -21,4 +21,4 @@ const ZeroKnowledgeProof = () => {
   );
 };
 
-export default ZeroKnowledgeProof;
+export default LindemannWeierstrass;

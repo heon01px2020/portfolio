@@ -5,12 +5,12 @@ import heonLogo from '../../assets/images/logo.png';
 
 const categories = [
   { name: 'All', id: 'all', link: '/blog?category=all', color: '#f56565' },
-  { name: 'Game Dev', id: 'game-dev', link: '/blog?category=game-dev', color: '#ecc94b' },
-  { name: 'Linux', id: 'linux', link: '/blog?category=linux', color: '#4299e1' },
+  { name: 'Artificial Intelligence', id: 'artificial-intelligence', link: '/blog?category=artificial-intelligence', color: '#ecc94b' },
   { name: 'Math', id: 'math', link: '/blog?category=math', color: '#9f7aea' },
-  { name: 'Networks', id: 'networks', link: '/blog?category=networks', color: '#48bb78' },
-  { name: 'Rust', id: 'rust', link: '/blog?category=rust', color: '#ed8936' },
+  { name: 'Theoretical CS', id: 'theoretical-cs', link: '/blog?category=theoretical-cs', color: '#4299e1' },
+  { name: 'Miscellaneous', id: 'miscellaneous', link: '/blog?category=miscellaneous', color: '#48bb78' }
 ];
+
 
 const BlogPostLayout = ({ children, selectedCategories }) => {
   return (

@@ -1,0 +1,16 @@
+html {
+    line-height: 1.5;
+    font-family: Georgia, serif;
+    font-size: 20px;
+    color: #1a1a1a;
+    background-color: #fdfdfd;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 100%;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    text-rendering: optimizeLegibility;
+    font-kerning: normal;
+}  
