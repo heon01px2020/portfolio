@@ -24,9 +24,8 @@ const LandingPage = () => {
     setActiveCard(card);
   };
 
+  // checks whether the device is mobile or not and updates accordingly
   const [isMobileDevice, setIsMobileDevice] = useState(isMobile());
-
-
   useEffect(() => {
     const handleResize = () => {
       setIsMobileDevice(isMobile());
@@ -41,36 +40,66 @@ const LandingPage = () => {
 
   const cardData = [
     {
-      title: 'Experience',
-      description: 'Check out my professional experience',
-      link: '/experience',
+      title: 'Projects',
+      description: 'Innovative solutions',
+      link: '/projects',
+      image: projectsImage,
+      icon: <FaProjectDiagram className="w-8 h-8 mr-2 text-white" />,
     },
     {
-      title: 'Projects',
-      description: 'See the projects I have worked on',
-      link: '/projects',
+      title: 'Experience',
+      description: 'Professional journey',
+      link: '/experience',
+      image: codingImage,
+      icon: <FaBriefcase className="w-8 h-8 mr-2 text-white" />,
     },
     {
       title: 'Blog',
-      description: 'Read my latest blog posts',
+      description: 'My thoughts and ideas',
       link: '/blog',
+      image: blogImage,
+      icon: <FaBlogger className="w-8 h-8 mr-2 text-white" />,
     },
+    {
+      title: 'About Me',
+      description: 'Get to know me',
+      link: '/aboutme',
+      image: aboutMeImage,
+      icon: <FaBlogger className="w-8 h-8 mr-2 text-white" />,
+    }
   ];
 
   const renderCards = () => {
     return cardData.map((card, index) => (
-      <div
+      <Link
         key={index}
-        className={`transition-transform transform ${
-          isMobileDevice ? '' : 'hover:scale-110'
-        } flex-shrink-0 m-4 p-4 bg-white rounded-lg shadow-md w-full max-w-xs`}
+        to={card.link}
+        className="transition-all duration-300"
+        style={{
+          backgroundImage: `url(${card.image})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          height: '100%',
+          flex: '1 1 100%',
+          transition: 'flex 0.3s ease-in-out',
+          borderRadius: '1.5rem',
+          margin: '1rem',
+          display: 'flex',
+          alignItems: 'flex-end',
+        }}
       >
-        <h2 className="text-2xl font-bold mb-2">{card.title}</h2>
-        <p className="mb-4">{card.description}</p>
-        <a href={card.link} className="text-blue-500 hover:underline">
-          Learn more
-        </a>
-      </div>
+        {(
+          <div className="flex flex-col justify-end w-full h-full p-4 bg-black bg-opacity-50" style={{ borderRadius: '1.5rem' }}>
+            <div className="flex items-center">
+              {card.icon}
+              <div>
+                <h3 className="text-xl font-bold text-white">{card.title}</h3>
+                <p className="text-gray-200">{card.description}</p>
+              </div>
+            </div>
+          </div>
+        )}
+      </Link>
     ));
   };
 
