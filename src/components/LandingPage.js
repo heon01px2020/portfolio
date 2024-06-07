@@ -37,28 +37,24 @@ const LandingPage = () => {
   const cardData = [
     {
       title: 'Projects',
-      description: 'Innovative solutions',
       link: '/projects',
       image: projectsImage,
       icon: <FaProjectDiagram className="w-8 h-8 mr-2 text-white" />,
     },
     {
       title: 'Experience',
-      description: 'Professional journey',
       link: '/experience',
       image: codingImage,
       icon: <FaBriefcase className="w-8 h-8 mr-2 text-white" />,
     },
     {
       title: 'Blog',
-      description: 'My thoughts and ideas',
       link: '/blog',
       image: blogImage,
       icon: <FaBlogger className="w-8 h-8 mr-2 text-white" />,
     },
     {
       title: 'About Me',
-      description: 'Get to know me',
       link: '/aboutme',
       image: aboutMeImage,
       icon: <FaBlogger className="w-8 h-8 mr-2 text-white" />,
@@ -90,7 +86,6 @@ const LandingPage = () => {
               {card.icon}
               <div>
                 <h3 className="text-xl font-bold text-white">{card.title}</h3>
-                <p className="text-gray-200">{card.description}</p>
               </div>
             </div>
           </div>
@@ -142,7 +137,6 @@ const LandingPage = () => {
                       <FaProjectDiagram className="w-8 h-8 mr-2 text-white" />
                       <div>
                         <h3 className="text-xl font-bold text-white">Projects</h3>
-                        <p className="text-gray-200">Innovative solutions</p>
                       </div>
                     </div>
                   </div>
@@ -168,7 +162,6 @@ const LandingPage = () => {
                       <FaBriefcase className="w-8 h-8 mr-2 text-white" />
                       <div>
                         <h3 className="text-xl font-bold text-white">Experience</h3>
-                        <p className="text-gray-200">Professional journey</p>
                       </div>
                     </div>
                   </div>
@@ -194,7 +187,6 @@ const LandingPage = () => {
                       <FaBlogger className="w-8 h-8 mr-2 text-white" />
                       <div>
                         <h3 className="text-xl font-bold text-white">Blog</h3>
-                        <p className="text-gray-200">My thoughts and ideas</p>
                       </div>
                     </div>
                   </div>
@@ -220,7 +212,6 @@ const LandingPage = () => {
                       <FaUser className="w-8 h-8 mr-2 text-white" />
                       <div>
                         <h3 className="text-xl font-bold text-white">About Me</h3>
-                        <p className="text-gray-200">Get to know me</p>
                       </div>
                     </div>
                   </div>
