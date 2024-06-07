@@ -70,7 +70,7 @@ const Blog = () => {
       <div className="flex-1 bg-gradient-to-br from-custom-white to-custom-blue p-8 w-full flex flex-col items-center">
         <div className="w-full max-w-7xl">
           <h1 className="text-4xl font-bold mb-4">Blog</h1>
-          <div className="flex space-x-2 mb-4">
+          <div className="flex flex-wrap space-x-2 space-y-2 mb-4">
             {categories.map(category => (
               <Link
                 key={category.id}
