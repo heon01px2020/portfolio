@@ -54,7 +54,8 @@ const projects = [
     title: "Motovis: Artificial Intelligence Intern",
     date: "Jun 2019 - Jul 2019",
     description: [
-      "Implemented convolutional neural network with Pytorch using semantic segmentation"
+      "Implemented a semantic segmentation model in PyTorch for accurate detection of traffic lanes",
+      "Fit the lanes to the nearest cubic polynomials using regression analysis"
     ],
     repoLink: null, // No repo link for this project
     image: motovisImage,
