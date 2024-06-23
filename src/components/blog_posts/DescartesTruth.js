@@ -246,12 +246,6 @@ const DescartesTruth = () => {
 
         <p>This perspective suggests that the apparent circularity in the proof may not undermine the Truth Rule but rather highlights the specific challenges in presenting a logical proof of God. Furthermore, for those who already believe in God, Descartes' argument may serve as a reflective process, where the understanding of one reinforces the other in a mutually supportive but not circular manner. This reflective process suggests a deepening of understanding and marks a clear starting point instead of a loop. Therefore, though Descartes’ full proof of God and the Truth Rule is circular, the Truth Rule in isolation is not.</p>
 
-        <p></p>
-
-        <p></p>
-
-        <p></p>
-
         <h1 id="bibliography">Bibliography</h1>
         <div className="thebibliography">
             Descartes, René. Meditations on First Philosophy With Selections from the Objections and Replies. Translated by John Cottingham, 2nd ed., Cambridge University Press, 2017.
