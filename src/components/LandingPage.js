@@ -108,7 +108,7 @@ const LandingPage = () => {
               at Brown passionate in <span style={{ color: '#183F7C', fontWeight: 'bold' }}>computer science </span> 
               and <span style={{ color: '#183F7C', fontWeight: 'bold' }}>math</span>. 
               Built with ReactJS, this site ensures a smooth experience on any device. 
-              Click on the cards or use the navigation links above to discover more about me.
+              Click on the cards to discover more about me.
             </p>
           </div>
         </div>
