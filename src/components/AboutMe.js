@@ -32,18 +32,21 @@ const AboutMe = () => {
         and semidefinite programming with Professor Pedro Felzenszwalb.
         </p>
         <p className="text-xl mb-4">
-        Pursuing computer science and math has always been driven by my 
-        passion for tackling complex problems. I often find myself solving 
-        math problems I come across on YouTube or those my friends send me, 
-        simply for the fun of it. The structured, axiomatic settings in math 
-        fascinate me, offering a clear and logical foundation upon which 
-        complex theories and applications are built. I am particularly 
-        captivated by the elegance and rigor of mathematical frameworks, 
-        which is why I am excited to participate in a math directed reading 
-        program on Descriptive Set Theory this summer. This area of study 
-        delves into the properties and classifications of sets in the context 
-        of topology and logic, aligning perfectly with my interest in exploring 
-        and manipulating axiomatic structures.
+        My passion for tackling complex problems fuels my pursuit of computer 
+        science and mathematics. I love the challenge of diving into difficult 
+        math problems, whether I find them online or through friends. Recently, 
+        I’ve been particularly drawn to the interplay between geometry and algebra, 
+        where their connection feels almost magical.
+        </p>
+        <p className="text-xl mb-4">
+        This summer, I'm excited to participate in a math directed reading program 
+        on Geometric Group Theory. This fascinating field explores the hidden 
+        connection between abstract groups and geometric objects. By studying how 
+        groups act on geometric spaces, geometric group theory helps understand the 
+        structural and asymptotic properties of these groups. What truly excites me 
+        is the ability to use the geometric properties of these objects to uncover 
+        underlying algebraic truths about the groups themselves. It's like analyzing 
+        a sculpture to understand the mathematical principles that govern its form!
         </p>
         <p className="text-xl mb-4">
         Beyond theoretical pursuits, I love applying math and CS to 
