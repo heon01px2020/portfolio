@@ -42,7 +42,7 @@ const Experience = () => {
                 <h3 className="text-xl font-semibold">Brown Undergraduate Researcher <span className="text-gray-600">Providence, RI</span></h3>
                 <p className="text-lg">Researcher</p>
                 <p className="text-gray-600">September 2023 to Present</p>
-                <p>Collaborating with Prof. Pedro Felzenszwalb to research clustering using iterated linear optimization and semidefinite programming.</p>
+                <p>Collaborating with Prof. Pedro Felzenszwalb in combinatorial optimization, applying iterated linear optimization (ILO) to investigate the invariant symmetric actions on the elliptope by linear isometries.</p>
               </div>
             </div>
             <div className="flex items-start mb-4">
