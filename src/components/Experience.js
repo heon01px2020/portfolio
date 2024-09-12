@@ -22,9 +22,9 @@ const Experience = () => {
                 <h3 className="text-xl font-semibold">Brown University <span className="text-gray-600">Providence, RI</span></h3>
                 <p className="text-lg">Bachelor of Science in Computer Science and Mathematics</p>
                 <p className="text-gray-600">August 2022 to May 2026</p>
-                <p><strong>Algorithms/ML/DL Courses:</strong> Robust Algorithms for ML; Algorithmist's Toolkit; Design and Analysis of Algorithms; Discrete Math; Fairness in Automated Decision Making; Deep Learning</p>
+                <p><strong>Algorithms/ML/DL Courses:</strong> Robust Algorithms for ML; Algorithmist's Toolkit; Design and Analysis of Algorithms; Fairness in Automated Decision Making; Deep Learning; Discrete Math</p>
                 <p><strong>Optimization/Stats Courses:</strong> Recent Applications of Probability and Statistics; Convex Analysis and Optimization Algorithms; Probability, Optimization, and Stochastic Calculus; Statistical Inference</p>
-                <p><strong>Math Courses:</strong> Analysis on Manifolds I/II; Graph Theory; Ordinary Differential Equations; Grad Algebra; Number Theory; Honors Linear Algebra; Honors Multivariable Calculus</p>
+                <p><strong>Math Courses:</strong> Grad Algebra; Analysis on Manifolds I/II; Graph Theory; Ordinary Differential Equations; Number Theory; Honors Linear Algebra; Honors Multivariable Calculus</p>
                 <p><strong>Teaching Assistant:</strong></p>
                 <ul className="list-disc list-inside">
                   <li>Design and Analysis of Algorithms (UTA, Fall 2024)</li>
