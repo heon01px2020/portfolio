@@ -5,7 +5,7 @@ import Layout from './Layout';
 const AboutMe = () => {
   return (
     <Layout>
-      <div className="p-8 max-w-4xl">
+      <div className="p-8 max-w-3xl">
         <h1 className="text-4xl font-bold mb-4">About Me</h1>
         <p className="text-xl mb-4">
         Hello! I am Heon, a rising junior at Brown University studying 

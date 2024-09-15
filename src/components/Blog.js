@@ -86,7 +86,7 @@ const Blog = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <nav className="w-full bg-white flex justify-between items-center p-4 mx-2 h-16">
+      <nav className="w-full bg-white flex justify-between items-center p-4 h-16">
         <Link to="/">
           <img src={heonLogo} alt="Logo" className="h-12 w-auto" /> {/* Adjust height and width as needed */}
         </Link>
@@ -104,7 +104,7 @@ const Blog = () => {
       </nav>
 
       <div className="flex-1 bg-gradient-to-br from-custom-white to-custom-blue p-8 w-full flex flex-col items-center">
-        <div className="w-full max-w-7xl">
+        <div className="w-full max-w-3xl">
           <h1 className="text-4xl font-bold mb-4">Blog</h1>
           <div className="flex space-x-4 overflow-x-auto pb-4">
             {categories.map(category => (
