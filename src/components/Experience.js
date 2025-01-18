@@ -27,8 +27,8 @@ const Experience = () => {
                 <p><strong>Math Courses:</strong> Grad Algebra; Analysis on Manifolds I/II; Graph Theory; Ordinary Differential Equations; Number Theory; Honors Linear Algebra; Honors Multivariable Calculus</p>
                 <p><strong>Teaching Assistant:</strong></p>
                 <ul className="list-disc list-inside">
+                  <li>Fairness in Automated Decision Making (HTA, Spring 2025; UTA, Spring 2024)</li>
                   <li>Design and Analysis of Algorithms (UTA, Fall 2024)</li>
-                  <li>Fairness in Automated Decision Making (UTA, Spring 2024)</li>
                   <li>Graph Theory (UTA, Spring 2024)</li>
                 </ul>
               </div>
