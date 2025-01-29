@@ -134,7 +134,17 @@ const Blog = () => {
                 <h2 className="text-2xl font-bold mb-2" style={{ color: '#183F7C' }}>{post.title}</h2>
               </Link>
               {/* <p className="mb-2">{post.description}</p> */}
-              <ReactMarkdown className="mb-2">{post.description}</ReactMarkdown>
+              {/* <ReactMarkdown className="mb-2">{post.description}</ReactMarkdown> */}
+              <ReactMarkdown
+                className="mb-2"
+                components={{
+                  a: ({ node, ...props }) => (
+                    <a style={{ color: '#1a0dab', textDecoration: 'underline' }} {...props} />
+                  ),
+                }}
+              >
+                {post.description}
+              </ReactMarkdown>
               <div className="flex space-x-2">
                 {post.categories.map(category => (
                   <span key={category} className="px-2 py-1 rounded-full text-white" style={{ backgroundColor: categories.find(cat => cat.name.toLowerCase().replace(' ', '-') === category.toLowerCase().replace(' ', '-')).color }}>
