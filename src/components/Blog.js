@@ -5,6 +5,13 @@ import heonLogo from '../assets/images/logo.png';
 
 const posts = [
   {
+    date: 'December 16, 2024',
+    title: 'Robust Estimation for the Erdös-Rényi Model',
+    description: 'Robust edge probability estimation in random graphs under adversarial perturbations',
+    categories: ['Math', 'Theoretical CS'],
+    link: 'robust-erdos-renyi'
+  },
+  {
     date: 'April 25, 2024',
     title: 'Understanding the Structure of Abelian Groups (with Modules!)',
     description: 'A proof of the Structure Theorem (to be updated)',

@@ -14,6 +14,7 @@ import VIT from './components/blog_posts/VIT';
 import AIExplainability from './components/blog_posts/AIExplainability';
 import LockeConsciousness from './components/blog_posts/LockeConsciousness';
 import DescartesTruth from './components/blog_posts/DescartesTruth';
+import RobustErdosRenyi from './components/blog_posts/RobustErdosRenyi';
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/blog/ai-explainability" element={<AIExplainability />} />
         <Route path="/blog/locke-consciousness" element={<LockeConsciousness />} />
         <Route path="/blog/descartes-truth" element={<DescartesTruth />} />
+        <Route path="/blog/robust-erdos-renyi" element={<RobustErdosRenyi />} />
       </Routes>
     </Router>
   );
