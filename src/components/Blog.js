@@ -134,13 +134,29 @@ const Blog = () => {
                 <h2 className="text-2xl font-bold mb-2" style={{ color: '#183F7C' }}>{post.title}</h2>
               </Link>
               {/* <p className="mb-2">{post.description}</p> */}
-              {/* <ReactMarkdown className="mb-2">{post.description}</ReactMarkdown> */}
+              {/* <ReactMarkdown
+                components={{
+                  p: ({ node, ...props }) => <p className="mb-2" {...props} />,
+                  a: ({ node, ...props }) => (
+                    <a
+                      style={{ color: '#1a0dab', textDecoration: 'underline' }}
+                      {...props}
+                    >
+                      {props.children || 'Link'}
+                    </a>
+                  ),
+                }}
+              >
+                {post.description}
+              </ReactMarkdown> */}
               <ReactMarkdown
                 components={{
                   p: ({ node, ...props }) => <p className="mb-2" {...props} />,
                   a: ({ node, ...props }) => (
                     <a
                       style={{ color: '#1a0dab', textDecoration: 'underline' }}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       {...props}
                     >
                       {props.children || 'Link'}
