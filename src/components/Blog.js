@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import ReactMarkdown from 'react-markdown';
 import { Link, useLocation } from 'react-router-dom';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
 import heonLogo from '../assets/images/logo.png';
@@ -132,7 +133,8 @@ const Blog = () => {
               <Link to={post.link}>
                 <h2 className="text-2xl font-bold mb-2" style={{ color: '#183F7C' }}>{post.title}</h2>
               </Link>
-              <p className="mb-2">{post.description}</p>
+              {/* <p className="mb-2">{post.description}</p> */}
+              <ReactMarkdown className="mb-2">{post.description}</ReactMarkdown>
               <div className="flex space-x-2">
                 {post.categories.map(category => (
                   <span key={category} className="px-2 py-1 rounded-full text-white" style={{ backgroundColor: categories.find(cat => cat.name.toLowerCase().replace(' ', '-') === category.toLowerCase().replace(' ', '-')).color }}>
