@@ -17,7 +17,7 @@ const RobustErdosRenyi = () => {
             <meta name="author" content="Heon Lee" />
             <meta name="author" content="George Chemmala" />
             <meta name="author" content="Arjan Chakravarthy" />
-            <title>Robust Estimation for the Erdös-Rényi Model</title>
+            <title>Robust Estimation for the Erdős-Rényi Model</title>
             <style>{`
             html {
                 line-height: 1.5;
@@ -195,7 +195,7 @@ const RobustErdosRenyi = () => {
         </Helmet>
         <header id="title-block-header">
             <h1 className="title">
-            Robust Estimation for the Erdös-Rényi Model
+            Robust Estimation for the Erdős-Rényi Model
             </h1>
             <p className="author">Heon Lee, George Chemmala, Arjan Chakravarthy</p>
             <p><b>Paper can be found on <a href='https://cs.brown.edu/people/ycheng79/csci2952qf24/Top_Project_3_Heon%20Lee_George%20Chemmala_Arjan%20Chakravarthy_Robust%20Estimation%20for%20the%20Erdo%CC%8Bs-Re%CC%81nyi%20Model.pdf' target='_blank' rel="noopener noreferrer" style={{color: 'blue'}}>Brown</a></b></p>
