@@ -136,10 +136,15 @@ const Blog = () => {
               {/* <p className="mb-2">{post.description}</p> */}
               {/* <ReactMarkdown className="mb-2">{post.description}</ReactMarkdown> */}
               <ReactMarkdown
-                className="mb-2"
                 components={{
+                  p: ({ node, ...props }) => (
+                    <p className="mb-2" {...props} />
+                  ),
                   a: ({ node, ...props }) => (
-                    <a style={{ color: '#1a0dab', textDecoration: 'underline' }} {...props} />
+                    <a
+                      style={{ color: '#1a0dab', textDecoration: 'underline' }}
+                      {...props}
+                    />
                   ),
                 }}
               >
