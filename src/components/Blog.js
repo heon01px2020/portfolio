@@ -7,7 +7,7 @@ const posts = [
   {
     date: 'December 16, 2024',
     title: 'Robust Estimation for the Erdős-Rényi Model',
-    description: 'Robust edge probability estimation in random graphs under adversarial perturbations. Top project for <a href="https://cs.brown.edu/people/ycheng79/csci2952qf24.html" target="_blank">Robust Algorithms for Machine Learning (CSCI2952Q)</a>',
+    description: 'Robust edge probability estimation in random graphs under adversarial perturbations. Top project for [Robust Algorithms for Machine Learning (CSCI2952Q)](https://cs.brown.edu/people/ycheng79/csci2952qf24.html)',
     categories: ['Math', 'Theoretical CS'],
     link: 'robust-erdos-renyi'
   },
