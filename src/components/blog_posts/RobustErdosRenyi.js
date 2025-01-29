@@ -1,11 +1,10 @@
-// import React, { useState, useEffect } from 'react';
 import React from 'react';
 import 'katex/dist/katex.min.css';
-import { BlockMath, InlineMath } from 'react-katex';
+// import { BlockMath, InlineMath } from 'react-katex';
 import BlogPostLayout from '../../blog_posts/BlogPostLayout';
 
 import { Helmet } from 'react-helmet';
-import '../LatexDocument.css';
+import '../blog_posts/LatexDocument.css';
 
 const RobustErdosRenyi = () => {
     const selectedCategories = ['Math', 'Theoretical CS'];
