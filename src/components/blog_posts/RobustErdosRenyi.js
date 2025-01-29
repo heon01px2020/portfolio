@@ -1,7 +1,7 @@
 import React from 'react';
 import 'katex/dist/katex.min.css';
 // import { BlockMath, InlineMath } from 'react-katex';
-import BlogPostLayout from '../../blog_posts/BlogPostLayout';
+import BlogPostLayout from '../blog_posts/BlogPostLayout';
 
 import { Helmet } from 'react-helmet';
 import '../blog_posts/LatexDocument.css';
