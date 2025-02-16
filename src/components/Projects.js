@@ -1,6 +1,7 @@
 // src/components/Projects.js
 import React from 'react';
 import Layout from './Layout';
+import ReactMarkdown from 'react-markdown';
 
 // Importing images from assets directory
 import datathonImage from '../assets/images/projects/datathon.png';
@@ -16,6 +17,22 @@ const projects = [
     date: "Aug 2024 - Aug 2024",
     description: [
       "Participated in the Citadel Invitational Datathon 2024, focusing on predictive analysis of the relationship between fast food accessibility, socio-economic factors, and obesity rates across U.S. states and counties.",
+      "Developed and evaluated multiple machine learning models, including Linear Regression, Random Forest, XGBoost, Autoregressive (AR) models, LSTM, and Jump-Diffusion models, to predict obesity rates based on fast food density, grocery store accessibility, and socio-economic indicators.",
+      "Performed feature importance analysis using SHAP and LIME to identify key drivers of obesity, such as fast food density, education levels, and poverty rates, providing actionable insights for public health interventions.",
+      "Presented findings and recommendations to stakeholders, highlighting the impact of socio-economic disparities and food environments on obesity rates, and suggesting targeted interventions for marginalized communities.",
+    ],
+    repoLink: null,
+    paperLinks: [
+      { label: "Report", link: "documents/fast_food_socioeconomics_and_obesity.pdf" }
+    ],
+    image: datathonImage,
+    imageStyle: {}
+  },
+  {
+    title: "Quantitative Analysis on the Socioeconomic Factors for Obesity Prediction",
+    date: "Aug 2024 - Aug 2024",
+    description: [
+      "Participated in the **Citadel Invitational Datathon 2024**, focusing on predictive analysis of the relationship between fast food accessibility, socio-economic factors, and obesity rates across U.S. states and counties.",
       "Developed and evaluated multiple machine learning models, including Linear Regression, Random Forest, XGBoost, Autoregressive (AR) models, LSTM, and Jump-Diffusion models, to predict obesity rates based on fast food density, grocery store accessibility, and socio-economic indicators.",
       "Performed feature importance analysis using SHAP and LIME to identify key drivers of obesity, such as fast food density, education levels, and poverty rates, providing actionable insights for public health interventions.",
       "Presented findings and recommendations to stakeholders, highlighting the impact of socio-economic disparities and food environments on obesity rates, and suggesting targeted interventions for marginalized communities.",
@@ -94,7 +111,8 @@ const Projects = () => {
                 <p className="text-gray-600 mb-4">{project.date}</p>
                 <ul className="list-disc list-inside mb-4">
                   {project.description.map((desc, i) => (
-                    <li key={i}>{desc}</li>
+                    // <li key={i}>{desc}</li>
+                    <li key={i}><ReactMarkdown children={desc} /></li>
                   ))}
                 </ul>
                 {project.repoLink && (
