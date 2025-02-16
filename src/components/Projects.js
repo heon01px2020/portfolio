@@ -5,6 +5,7 @@ import ReactMarkdown from 'react-markdown';
 import 'katex/dist/katex.min.css';
 
 // Importing images from assets directory
+import erdosRenyiImage from '../assets/images/projects/erdos_renyi.png';
 import datathonImage from '../assets/images/projects/datathon.png';
 import tendamImage from '../assets/images/projects/tendam.jpg';
 import imvisibleImage from '../assets/images/projects/imvisible.jpg';
@@ -27,7 +28,7 @@ const projects = [
     paperLinks: [
       { label: "Report", link: "https://cs.brown.edu/people/ycheng79/csci2952qf24/Top_Project_3_Heon%20Lee_George%20Chemmala_Arjan%20Chakravarthy_Robust%20Estimation%20for%20the%20Erdo%CC%8Bs-Re%CC%81nyi%20Model.pdf" }
     ],
-    image: datathonImage,
+    image: erdosRenyiImage,
     imageStyle: {}
   },
   {
