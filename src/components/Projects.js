@@ -3,6 +3,7 @@ import React from 'react';
 import Layout from './Layout';
 
 // Importing images from assets directory
+import datathonImage from '../assets/images/projects/datathon.png';
 import tendamImage from '../assets/images/projects/tendam.jpg';
 import imvisibleImage from '../assets/images/projects/imvisible.jpg';
 import internationalFairImage from '../assets/images/projects/international_fair.jpg';
@@ -10,6 +11,22 @@ import motovisImage from '../assets/images/projects/motovis.jpg';
 
 // Project data
 const projects = [
+  {
+    title: "Quantitative Analysis on the Socioeconomic Factors for Obesity Prediction",
+    date: "Aug 2024 - Aug 2024",
+    description: [
+      "Participated in the Citadel Invitational Datathon 2024, focusing on predictive analysis of the relationship between fast food accessibility, socio-economic factors, and obesity rates across U.S. states and counties.",
+      "Developed and evaluated multiple machine learning models, including Linear Regression, Random Forest, XGBoost, Autoregressive (AR) models, LSTM, and Jump-Diffusion models, to predict obesity rates based on fast food density, grocery store accessibility, and socio-economic indicators.",
+      "Performed feature importance analysis using SHAP and LIME to identify key drivers of obesity, such as fast food density, education levels, and poverty rates, providing actionable insights for public health interventions.",
+      "Presented findings and recommendations to stakeholders, highlighting the impact of socio-economic disparities and food environments on obesity rates, and suggesting targeted interventions for marginalized communities.",
+    ],
+    repoLink: null,
+    paperLinks: [
+      { label: "Report", link: "documents/fast_food_socioeconomics_and_obesity.pdf" }
+    ],
+    image: datathonImage,
+    imageStyle: {}
+  },
   {
     title: "Tendam: A Friend-matching Platform",
     date: "Mar 2021 - May 2021",
