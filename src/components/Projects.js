@@ -119,12 +119,24 @@ const Projects = () => {
                     // <li key={i}>{desc}</li>
                     <li key={i}><ReactMarkdown children={desc} /></li>
                   ))} */}
-                  {project.description.map((desc, i) => (
+                  {/* {project.description.map((desc, i) => (
                     <li key={i}>
                       <ReactMarkdown
                         children={desc}
                         remarkPlugins={[remarkMath]}
                         rehypePlugins={[rehypeKatex]}
+                      />
+                    </li>
+                  ))} */}
+                  {project.description.map((desc, i) => (
+                    <li key={i} style={{ display: 'flex', alignItems: 'flex-start' }}> {/* Key change here */}
+                      <ReactMarkdown
+                        children={desc}
+                        remarkPlugins={[remarkMath]}
+                        rehypePlugins={[rehypeKatex]}
+                        components={{
+                          p: ({ node, ...props }) => <>{props.children}</>, // Render paragraphs inline
+                        }}
                       />
                     </li>
                   ))}
