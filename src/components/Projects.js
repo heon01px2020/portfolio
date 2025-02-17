@@ -4,6 +4,7 @@ import Layout from './Layout';
 import ReactMarkdown from 'react-markdown';
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
+import rehypeRaw from 'rehype-raw';
 import 'katex/dist/katex.min.css';
 
 // Importing images from assets directory
@@ -20,11 +21,9 @@ const projects = [
     title: "Robust Estimation for the Erdős-Rényi Model",
     date: "Oct 2024 - Dec 2024",
     description: [
-      '**Awarded Top Project (3rd Place)** in "Robust Algorithms for Machine Learning" for developing novel algorithms to estimate edge probability in adversarially perturbed Erdős-Rényi graphs.',
-      "Introduced a new $O(q,\\varepsilon)$-adversarial model to analyze varying levels of adversarial strength in graph corruption scenarios.",
-      "Designed and implemented three robust algorithms: Mean-Adjusted Median, Bias-Corrected Mean-Adjusted Median, Variance-Based Filtering",
-      "Conducted theoretical analysis to establish error bounds and runtime guarantees.",
-      "Empirically validated novel algorithms, demonstrating improved performance compared to SOTA methods."
+      '**Awarded Top Project** in <span style="color: blue;"><a href="https://cs.brown.edu/people/ycheng79/csci2952qf24.html" target="_blank" rel="noopener noreferrer">Robust Algorithms for Machine Learning</a></span> for developing novel algorithms to estimate edge probability in adversarially perturbed Erdős-Rényi graphs.',
+      "Introduced the $O(q,\\varepsilon)$-adversarial model, and designed and implemented three novel robust algorithms",
+      "Conducted theoretical and empirical analysis to establish error bounds and runtime guarantees"
     ],
     repoLink: null,
     paperLinks: [
@@ -34,13 +33,14 @@ const projects = [
     imageStyle: {}
   },
   {
-    title: "Quantitative Analysis on the Socioeconomic Factors for Obesity Prediction",
+    title: "Quantitative Analysis on the Socioeconomic Factors for Obesity",
     date: "Aug 2024 - Aug 2024",
     description: [
-      "Participated in the **Citadel Invitational Datathon 2024**, focusing on predictive analysis of the relationship between fast food accessibility, socio-economic factors, and obesity rates across U.S. states and counties.",
-      "Developed and evaluated multiple machine learning models, including Linear Regression, Random Forest, XGBoost, Autoregressive (AR) models, LSTM, and Jump-Diffusion models, to predict obesity rates based on fast food density, grocery store accessibility, and socio-economic indicators.",
-      "Performed feature importance analysis using SHAP and LIME to identify key drivers of obesity, such as fast food density, education levels, and poverty rates, providing actionable insights for public health interventions.",
-      "Presented findings and recommendations to stakeholders, highlighting the impact of socio-economic disparities and food environments on obesity rates, and suggesting targeted interventions for marginalized communities.",
+      "Participated in the **Citadel Invitational Datathon 2024**",
+      "Conducted a **predictive analysis** on fast food access, socioeconomic factors, and obesity across U.S. states and counties",
+      "Developed and evaluated predictive models (e.g., Linear Regression, Random Forest, LSTM), identifying key obesity drivers using SHAP and LIME analysis",
+      // "Developed and evaluated multiple machine learning models, including Linear Regression, Random Forest, XGBoost, Autoregressive (AR) models, LSTM, and Jump-Diffusion models, to predict obesity rates based on fast food density, grocery store accessibility, and socio-economic indicators.",
+      // "Performed feature importance analysis using SHAP and LIME to identify key drivers of obesity, such as fast food density, education levels, and poverty rates, providing actionable insights for public health interventions.",
     ],
     repoLink: null,
     paperLinks: [
@@ -116,19 +116,6 @@ const Projects = () => {
                 <p className="text-gray-600 mb-4">{project.date}</p>
                 <ul className="list-disc list-inside mb-4">
                   {/* {project.description.map((desc, i) => (
-                    // <li key={i}>{desc}</li>
-                    <li key={i}><ReactMarkdown children={desc} /></li>
-                  ))} */}
-                  {/* {project.description.map((desc, i) => (
-                    <li key={i}>
-                      <ReactMarkdown
-                        children={desc}
-                        remarkPlugins={[remarkMath]}
-                        rehypePlugins={[rehypeKatex]}
-                      />
-                    </li>
-                  ))} */}
-                  {project.description.map((desc, i) => (
                     <li key={i} style={{ listStylePosition: 'inside' }}>
                       <ReactMarkdown
                         children={desc}
@@ -140,6 +127,21 @@ const Projects = () => {
                         }}
                         remarkPlugins={[remarkMath]}
                         rehypePlugins={[rehypeKatex]}
+                      />
+                    </li>
+                  ))} */}
+                  {project.description.map((desc, i) => (
+                    <li key={i} style={{ listStylePosition: 'inside' }}>
+                      <ReactMarkdown
+                        children={desc}
+                        components={{
+                          // Override paragraphs to render inline with no extra margin
+                          p: ({ node, ...props }) => (
+                            <p {...props} style={{ display: 'inline', margin: 0 }} />
+                          ),
+                        }}
+                        remarkPlugins={[remarkMath]}
+                        rehypePlugins={[rehypeKatex, rehypeRaw]}
                       />
                     </li>
                   ))}
