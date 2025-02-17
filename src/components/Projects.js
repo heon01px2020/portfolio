@@ -129,7 +129,7 @@ const Projects = () => {
                     </li>
                   ))} */}
                   {project.description.map((desc, i) => (
-                    <li key={i} style={{ display: 'flex', alignItems: 'flex-start' }}> {/* Key change here */}
+                    <li key={i} style={{ display: 'inline-block' }}> {/* Key change here */}
                       <ReactMarkdown
                         children={desc}
                         remarkPlugins={[remarkMath]}
