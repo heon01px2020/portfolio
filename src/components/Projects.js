@@ -28,7 +28,7 @@ const projects = [
     ],
     repoLink: null,
     paperLinks: [
-      { label: "Report", link: "https://cs.brown.edu/people/ycheng79/csci2952qf24/Top_Project_3_Heon%20Lee_George%20Chemmala_Arjan%20Chakravarthy_Robust%20Estimation%20for%20the%20Erdo%CC%8Bs-Re%CC%81nyi%20Model.pdf" }
+      { label: "Paper", link: "https://cs.brown.edu/people/ycheng79/csci2952qf24/Top_Project_3_Heon%20Lee_George%20Chemmala_Arjan%20Chakravarthy_Robust%20Estimation%20for%20the%20Erdo%CC%8Bs-Re%CC%81nyi%20Model.pdf" }
     ],
     image: erdosRenyiImage,
     imageStyle: {}
