@@ -58,6 +58,9 @@ const projects = [
       "Engineered with a team of 5 using **React** and **Java**"
     ],
     repoLink: "https://github.com/heon01px2020/tendam",
+    paperLinks: [
+      { label: "Website", link: "https://tendam-cs0320-2021.firebaseapp.com"}
+    ],
     image: tendamImage,
     imageStyle: {}
   },
