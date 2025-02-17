@@ -129,14 +129,17 @@ const Projects = () => {
                     </li>
                   ))} */}
                   {project.description.map((desc, i) => (
-                    <li key={i} style={{ display: 'inline-block' }}> {/* Key change here */}
+                    <li key={i} style={{ listStylePosition: 'inside' }}>
                       <ReactMarkdown
                         children={desc}
+                        components={{
+                          // Override paragraphs to render inline
+                          p: ({ node, ...props }) => (
+                            <p {...props} style={{ display: 'inline', margin: -10 }} />
+                          ),
+                        }}
                         remarkPlugins={[remarkMath]}
                         rehypePlugins={[rehypeKatex]}
-                        components={{
-                          p: ({ node, ...props }) => <>{props.children}</>, // Render paragraphs inline
-                        }}
                       />
                     </li>
                   ))}
