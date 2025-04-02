@@ -198,7 +198,7 @@ const RobustErdosRenyi = () => {
             Robust Estimation for the Erdős-Rényi Model
             </h1>
             <p className="author">Heon Lee, George Chemmala, Arjan Chakravarthy</p>
-            <p><b>Paper can be found on <a href='https://cs.brown.edu/people/ycheng79/csci2952qf24/Top_Project_3_Heon%20Lee_George%20Chemmala_Arjan%20Chakravarthy_Robust%20Estimation%20for%20the%20Erdo%CC%8Bs-Re%CC%81nyi%20Model.pdf' target='_blank' rel="noopener noreferrer" style={{color: 'blue'}}>Brown</a></b></p>
+            <p><b>Paper can be found on <a href='https://cs.brown.edu/people/ycheng79/csci2952qf24/Top_Project_2_Heon%20Lee_George%20Chemmala_Arjan%20Chakravarthy_Robust%20Estimation%20for%20the%20Erdo%CC%8Bs-Re%CC%81nyi%20Model.pdf' target='_blank' rel="noopener noreferrer" style={{color: 'blue'}}>Brown</a></b></p>
             <p><b>Full paper to be uploaded here later</b></p>
         </header>
         </BlogPostLayout>
