@@ -25,6 +25,7 @@ const Experience = () => {
                 <p><strong>Algorithms/ML/DL Courses:</strong> Robust Algorithms for ML; Algorithmist's Toolkit; Advanced Topics in DL; Design and Analysis of Algorithms; Fairness in Automated Decision Making; Deep Learning; Discrete Math</p>
                 <p><strong>Optimization/Stats Courses:</strong> Recent Applications of Probability and Statistics; Convex Analysis and Optimization Algorithms; Advanced Probabilistic Methods in CS; Probability, Optimization, and Stochastic Calculus; Statistical Inference</p>
                 <p><strong>Math Courses:</strong> Grad Algebra I/II; Analysis on Manifolds I/II; Graph Theory; ODE/PDE; Number Theory; Honors Linear Algebra; Honors Multivariable Calculus</p>
+                <p><strong>Other CS Courses:</strong> Fundamentals of Computer Systems; Intro to Software Engineering; Intro to Cryptography (Theory); Accelerated Intro to CS</p>
                 <p><strong>Teaching Assistant:</strong></p>
                 <ul className="list-disc list-inside">
                   <li>Fairness in Automated Decision Making (HTA, Spring 2025; UTA, Spring 2024)</li>
