@@ -26,7 +26,8 @@ const AboutMe = () => {
         to incoming first-years as a Meiklejohn. I have also been a head TA 
         for Fairness in Automated Decision Making (CSCI1951z), and a TA for 
         Graph Theory (MATH1230) and Design and Analysis of Algorithms (CSCI1570). 
-        
+        </p>
+        <p className="text-xl mb-4">
         I'm currently spending the summer researching at Brown. I'm engaged in 
         nonconvex optimization with Professor Pedro Felzenszwalb, focusing on iterated 
         linear optimization and semidefinite programming. Additionally, I'm collaborating 
