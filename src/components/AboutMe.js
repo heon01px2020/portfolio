@@ -18,17 +18,19 @@ const AboutMe = () => {
         </p>
         <p className="text-xl mb-4">
         My main interests are in theoretical computer science. More 
-        specifically, I do machine learning and optimization. I also have 
-        a strong interest in related fields such as mathematical analysis, algebra, 
-        probability, and topology.
+        specifically, I do high-dimensional statistics and optimization. I also have 
+        a strong interest in related fields such as algebra and topology.
         </p>
         <p className="text-xl mb-4">
-        At Brown, I've served on the Outreach Committee and am introducing Brown 
+        At Brown, I've served on the Outreach Committee and have introduced Brown 
         to incoming first-years as a Meiklejohn. I have also been a head TA 
         for Fairness in Automated Decision Making (CSCI1951z), and a TA for 
         Graph Theory (MATH1230) and Design and Analysis of Algorithms (CSCI1570). 
-        Furthermore, I research theoretical algorithms with Professor Pedro Felzenszwalb, 
-        focusing on iterated linear optimization and semidefinite programming.
+        
+        I'm currently spending the summer researching at Brown. I'm engaged in 
+        nonconvex optimization with Professor Pedro Felzenszwalb, focusing on iterated 
+        linear optimization and semidefinite programming. Additionally, I'm collaborating 
+        with Professor Youngtak Sohn on optimal recovery in stochastic block models.
         </p>
         <p className="text-xl mb-4">
         My passion for tackling complex problems drives my pursuit of computer 
