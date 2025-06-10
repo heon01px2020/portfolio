@@ -8,7 +8,7 @@ const AboutMe = () => {
       <div className="p-8 max-w-3xl">
         <h1 className="text-4xl font-bold mb-4">About Me</h1>
         <p className="text-xl mb-4">
-        Hello! I'm Heon, a junior at Brown University studying 
+        Hello! I'm Heon, a senior at Brown University studying 
         Computer Science and Mathematics. 
         {/* Originally from Seoul, Korea, 
         I grew up in Shanghai, China and am currently studying in Providence. 
