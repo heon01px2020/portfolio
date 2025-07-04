@@ -9,6 +9,8 @@ import 'katex/dist/katex.min.css';
 
 // Importing images from assets directory
 import erdosRenyiImage from '../assets/images/projects/erdos_renyi.png';
+import lshImage from '../assets/images/projects/lsh.png';
+import worldMarImage from '../assets/images/projects/worldmar.jpg';
 import datathonImage from '../assets/images/projects/datathon.png';
 import tendamImage from '../assets/images/projects/tendam.jpg';
 import imvisibleImage from '../assets/images/projects/imvisible.jpg';
@@ -17,6 +19,34 @@ import motovisImage from '../assets/images/projects/motovis.jpg';
 
 // Project data
 const projects = [
+  {
+    title: "When LSH Breaks",
+    date: "Feb 2025 - May 2025",
+    description: [
+      'Studied natural generalizations of the cross-polytope LSH to $\\ell_p$-spheres via scaled-rotation and symmetry.',
+      'Proved that neither scheme yields an $(r, cr)$-sensitive LSH for $p\\neq2$, establishing impossibility.'
+    ],
+    repoLink: null,
+    paperLinks: [
+      { label: "Paper", link: "documents/when_lsh_breaks.pdf"}
+    ],
+    image: lshImage,
+    imageStyle: {}
+  },
+  {
+    title: "WorldMAR",
+    date: "Feb 2025 - May 2025",
+    description: [
+      'A fast, action-conditioned next-frame generator for Minecraft, inspired by Oasis and the MAR framework for image generation.',
+      'Designed for model-based control, it enables ~4x faster sampling than full-frame diffusion methods.'
+    ],
+    repoLink: "https://github.com/nwrousell/world-mar",
+    paperLinks: [
+      { label: "Paper", link: "documents/worldmar.pdf"}
+    ],
+    image: worldMarImage,
+    imageStyle: {}
+  },
   {
     title: "Robust Estimation for the Erdős-Rényi Model",
     date: "Oct 2024 - Dec 2024",
