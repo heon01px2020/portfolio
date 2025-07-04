@@ -44,6 +44,15 @@ const Experience = () => {
               <div>
                 <h3 className="text-xl font-semibold">Brown Undergraduate Researcher <span className="text-gray-600">Providence, RI</span></h3>
                 <p className="text-lg">Researcher</p>
+                <p className="text-gray-600">Mar 2025 to Present</p>
+                <p>Collaborating with Prof. Youngtak Sohn in high-dimensional statistics for optimal recovery in stochastic block models.</p>
+              </div>
+            </div>
+            <div className="flex items-start mb-4">
+              <img src={brownLogo} alt="Brown University" className="w-12 h-12 mr-4 rounded-lg"/>
+              <div>
+                <h3 className="text-xl font-semibold">Brown Undergraduate Researcher <span className="text-gray-600">Providence, RI</span></h3>
+                <p className="text-lg">Researcher</p>
                 <p className="text-gray-600">September 2023 to Present</p>
                 <p>Collaborating with Prof. Pedro Felzenszwalb in combinatorial optimization, applying iterated linear optimization (ILO) to investigate the invariant symmetric actions on the elliptope by linear isometries.</p>
               </div>
