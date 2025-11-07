@@ -16,9 +16,25 @@ import tendamImage from '../assets/images/projects/tendam.jpg';
 import imvisibleImage from '../assets/images/projects/imvisible.jpg';
 import internationalFairImage from '../assets/images/projects/international_fair.jpg';
 import motovisImage from '../assets/images/projects/motovis.jpg';
+import pgaImage from '../assets/images/projects/pga.png';
 
 // Project data
 const projects = [
+   {
+    title: "Projected Subgradient Ascent for Convex Maximization",
+    date: "Dec 2024 - Nov 2025",
+    description: [
+      'Studied the convergence of large scaled projection to a linear optimizer in Hilbert spaces.',
+      'Proved that projected subgradient ascent accumulation points are first-order stationary with arbitrarily large steps.',
+      'Demonstrated that Max-Cut SDPs can be competitively solved via a projection, matching accuracy while running 8-100x faster on standard benchmarks.'
+    ],
+    repoLink: null,
+    paperLinks: [
+      { label: "Paper", link: "https://www.arxiv.org/abs/2511.00741"}
+    ],
+    image: pgaImage,
+    imageStyle: {}
+  },
   {
     title: "When LSH Breaks",
     date: "Feb 2025 - May 2025",
