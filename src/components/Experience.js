@@ -29,6 +29,7 @@ const Experience = () => {
                 <p><strong>Teaching Assistant:</strong></p>
                 <ul className="list-disc list-inside">
                   <li>Fairness in Automated Decision Making (HTA, Spring 2025/2026; UTA, Spring 2024)</li>
+                  <li>Recent Applications of Probability and Statistics (UTA, Spring 2026)</li>
                   <li>Design and Analysis of Algorithms (UTA, Fall 2024)</li>
                   <li>Graph Theory (UTA, Spring 2024)</li>
                 </ul>
