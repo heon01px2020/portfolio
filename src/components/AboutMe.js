@@ -8,8 +8,8 @@ const AboutMe = () => {
       <div className="p-8 max-w-3xl">
         <h1 className="text-4xl font-bold mb-4">About Me</h1>
         <p className="text-xl mb-4">
-        Hello! I'm Heon, a junior at Brown University studying 
-        Computer Science and Mathematics. 
+        Hello! I'm Heon, a senior at Brown University studying 
+        Mathematics and Computer Science. 
         {/* Originally from Seoul, Korea, 
         I grew up in Shanghai, China and am currently studying in Providence. 
         With a unique cultural perspective, I communicate effectively and 
@@ -17,17 +17,16 @@ const AboutMe = () => {
         Furthermore, I am adaptable and am always eager to learn new things. */}
         </p>
         <p className="text-xl mb-4">
-        My main interests are in theoretical computer science. More 
-        specifically, I do high-dimensional statistics and optimization. I also have 
-        a strong interest in related fields such as algebra and topology.
+        My main interests are in high-dimensional statistics and optimization. I also have 
+        a strong interests in algebra.
         </p>
-        <p className="text-xl mb-4">
+        {/* <p className="text-xl mb-4">
         At Brown, I've served on the Outreach Committee and have introduced Brown 
         to incoming first-years as a Meiklejohn. I have also been a head TA 
         for Fairness in Automated Decision Making (CSCI1951z), and a TA for 
         Graph Theory (MATH1230) and Design and Analysis of Algorithms (CSCI1570). 
-        </p>
-        <p className="text-xl mb-4">
+        </p> */}
+        {/* <p className="text-xl mb-4">
         I'm currently spending the summer researching at Brown. I'm engaged in 
         nonconvex optimization with Professor Pedro Felzenszwalb, focusing on iterated 
         linear optimization and semidefinite programming. Additionally, I'm collaborating 
@@ -40,7 +39,7 @@ const AboutMe = () => {
         I'm fascinated by the interplay between geometry and algebra, a connection 
         that's become even more exciting as I frequently find it important in 
         my current research!
-        </p>
+        </p> */}
         {/* <p className="text-xl mb-4">
         This summer, I'm excited to participate in a math directed reading program 
         on Geometric Group Theory. This fascinating field explores the hidden 
