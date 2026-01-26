@@ -103,7 +103,7 @@ const LandingPage = () => {
             <h1 className="text-base font-bold" style={{ color: '#183F7C' }}>WELCOME TO MY LITTLE CORNER OF THE INTERNET :)</h1>
             <h2 className="text-6xl font-bold mt-4">HI, I'M HEON!</h2>
             <p className="mt-4 text-xl max-w-xl">
-              I'm a <span style={{ color: '#183F7C', fontWeight: 'bold' }}>senior </span>
+              I'm a senior
               at Brown passionate in <span style={{ color: '#183F7C', fontWeight: 'bold' }}>math </span> 
               and <span style={{ color: '#183F7C', fontWeight: 'bold' }}>computer science</span>. 
               Built with ReactJS, this site ensures a smooth experience on any device. 
