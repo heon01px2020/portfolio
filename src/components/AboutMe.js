@@ -18,7 +18,7 @@ const AboutMe = () => {
         </p>
         <p className="text-xl mb-4">
         My main interests are in high-dimensional statistics and optimization. I also have 
-        a strong interests in algebra.
+        a strong interest in algebra.
         </p>
         {/* <p className="text-xl mb-4">
         At Brown, I've served on the Outreach Committee and have introduced Brown 
